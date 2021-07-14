@@ -1,0 +1,14 @@
+.header-design-card {
+  height: 111px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__img {
+    width: 201px;
+  }
+  @media all and (min-width: 768px) {
+    justify-content: flex-start;
+    margin-left: 40px;
+  }
+}

@@ -1,0 +1,64 @@
+@import "../layout/header-desing-card";
+@import "../layout/preview";
+@import "../layout/design";
+@import "../layout/fill";
+@import "../layout/share";
+
+@import "../layout/collapsable";
+
+.wrapper {
+  background: linear-gradient(#f5f5f5, #ffffff);
+
+  @media all and (min-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .main__content {
+    @media all and (min-width: 768px) {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: flex-start;
+    }
+  }
+  .content__form {
+    margin: 0 20px;
+
+    @media all and (min-width: 768px) {
+      margin: 23px 30px auto 40px;
+      min-width: 330px;
+    }
+  }
+  .form__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0px;
+    cursor: pointer;
+  }
+  .form__iconL {
+    font-size: 18px;
+    color: $color-icon;
+    margin-right: 10px;
+  }
+  .form__text {
+    font-size: 18px;
+    font-family: $font-main;
+    color: $color-text;
+    text-transform: uppercase;
+  }
+  .form__iconR {
+    font-size: 18px;
+    color: $color-text;
+  }
+
+  .form__border,
+  .form__border--share {
+    height: 1px;
+    background-color: $color-bordertext;
+  }
+
+  .form__border--share {
+    margin-bottom: 30px;
+  }
+}

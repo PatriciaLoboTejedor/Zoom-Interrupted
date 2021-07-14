@@ -1,0 +1,97 @@
+.colorselection {
+  border-bottom: 2px;
+  color: #d8d8d8;
+}
+
+.noneCollapsable {
+  display: none;
+}
+
+.radioTitle {
+  display: inline;
+  font-size: 14px;
+  font-family: $font-main;
+  color: $color-text;
+  text-transform: uppercase;
+  margin: 25px 82px auto 40px;
+  padding: 0;
+}
+.coloroption {
+  width: 17px;
+  height: 17px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.design__content {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+
+  margin-bottom: 20px;
+}
+.pallete1,
+.pallete2,
+.pallete3,
+.pallete4,
+.pallete5 {
+  width: 30px;
+  height: 25px;
+}
+.pallete1 {
+  &.a {
+    background-color: $color-1a;
+  }
+  &.b {
+    background-color: $color-1b;
+  }
+  &.c {
+    background-color: $color-1c;
+  }
+}
+.pallete2 {
+  &.a {
+    background-color: $color-2a;
+  }
+  &.b {
+    background-color: $color-2b;
+  }
+  &.c {
+    background-color: $color-2c;
+  }
+}
+.pallete3 {
+  &.a {
+    background-color: $color-3a;
+  }
+  &.b {
+    background-color: $color-3b;
+  }
+  &.c {
+    background-color: $color-3c;
+  }
+}
+
+.pallete4 {
+  &.a {
+    background-color: $color-4a;
+  }
+  &.b {
+    background-color: $color-4b;
+  }
+  &.c {
+    background-color: $color-4c;
+  }
+}
+
+.pallete5 {
+  &.a {
+    background-color: $color-5a;
+  }
+  &.b {
+    background-color: $color-5b;
+  }
+  &.c {
+    background-color: $color-5c;
+  }
+}

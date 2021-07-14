@@ -1,0 +1,110 @@
+.shared {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  border-radius: 12px;
+  background-color: $color-icon;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin: 25px auto;
+  cursor: pointer;
+  font-size: 18px;
+  font-family: $font-main;
+  border-color: $color-icon;
+  box-shadow: 0 0 5px 3px rgba(213, 213, 213, 0.4);
+}
+.button__hidden {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 50px;
+  border-radius: 12px;
+  background-color: rgba(213, 213, 213, 0.7);
+  box-shadow: 0 0 5px 3px rgba(213, 213, 213, 0.4);
+
+  margin: 30px auto;
+}
+.button__icon {
+  font-size: 22px;
+  color: #ffffff;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+.button__text {
+  text-align: center;
+  font-size: 18px;
+  font-family: $font-main;
+  text-transform: uppercase;
+  color: #ffffff;
+  vertical-align: middle;
+}
+
+.shared__text {
+  font-size: 18px;
+  font-family: $font-main;
+  font-weight: 700;
+  margin-top: 20px;
+}
+.shared__link {
+  font-size: 14px;
+  color: $color-icon;
+  font-weight: 500;
+  margin: 30px auto;
+}
+.shared__button--twitter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 180px;
+  height: 35px;
+  background-color: #00a0f5;
+  border: inherit 2px #00a0f5;
+  border-radius: 5px;
+  color: #ffffff;
+  margin-bottom: 30px;
+  &:hover {
+    color: #ffffff;
+  }
+}
+.share__result--twitterlink {
+  color: #ffffff;
+  margin-left: 10px;
+}
+.shared__button--text {
+  font-size: 14px;
+  font-family: $font-main;
+  line-height: 20px;
+}
+.shared__icon {
+  margin-right: 6px;
+}
+
+.hidden {
+  display: none;
+}
+
+.message {
+  font-size: 16px;
+  color: $color-icon;
+  font-weight: bold;
+  text-align: center;
+  font-family: $font-main;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.message-error {
+  font-size: 12px;
+  color: black;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}

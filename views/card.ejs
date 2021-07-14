@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link rel="shortcut icon" type="image/png" href="../public/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather:wght@900&family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <link
+      href="/static/css/main.8a3c0770.chunk.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <title>Card preview</title>
+  </head>
+  <body>
+    <section class="main__preview card_link">
+      <div class="preview__card palette-preview<%= palette %>">
+        <div class="card__line card__line--color">
+          <h2 class="card__name card__name--color js-preview-name">
+            <%= name %>
+          </h2>
+          <h3 class="card__job js-preview-job"><%= job %></h3>
+        </div>
+
+        <div
+          class="card__pic js__profile-preview pic_background"
+          style="background-image: url('<%= photo %>')"
+        ></div>
+
+        <ul class="card__contact">
+          <li class="contact__icon contact__icon--color">
+            <a
+              class="icon icon--color js-preview-phone"
+              href="tel:<%= phone %>"
+              target="_blank"
+            >
+              <i class="contact__icon__pic fas fa-mobile-alt"></i
+            ></a>
+          </li>
+          <li class="contact__icon contact__icon--color">
+            <a
+              class="icon icon--color js-preview-mail"
+              href="mailto:<%= email %>"
+              target="_blank"
+            >
+              <i class="contact__icon__pic far fa-envelope"></i
+            ></a>
+          </li>
+          <li class="contact__icon contact__icon--color">
+            <a
+              class="icon icon--color js-preview-linkedin"
+              href="https://linkedin.com/in/<%= linkedin %>"
+              title="Linkedin contact"
+              target="_blank"
+            >
+              <i class="contact__icon__pic fab fa-linkedin-in"></i>
+            </a>
+          </li>
+          <li class="contact__icon contact__icon--color">
+            <a
+              class="icon icon--color js-preview-github"
+              href="https://github.com/<%= github %>"
+              target="_blank"
+            >
+              <i class="contact__icon__pic fab fa-github-alt"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </body>
+</html>

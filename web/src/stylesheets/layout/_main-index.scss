@@ -1,0 +1,113 @@
+.main-index {
+  height: 88vh;
+
+  background-color: $color-index-background;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: $font-main;
+  font-size: 13px;
+  @media all and(min-width: 768px) {
+    font-size: 16px;
+    height: 93vh;
+    justify-content: flex-end;
+  }
+
+  .header__img {
+    width: 250px;
+    margin-top: 95px;
+
+    @media all and(min-width: 768px) {
+      width: 419px;
+      margin-top: 290px;
+    }
+  }
+
+  &__title {
+    margin: 35px 50px 0px 50px;
+    font-family: $font-main;
+    color: $color-orange;
+    font-size: 19px;
+
+    @media all and(min-width: 768px) {
+      margin: 30px 245px 0px 245px;
+      font-size: 24px;
+    }
+  }
+
+  &__subtitle {
+    color: $color-secondarytext;
+    margin: 0px 28px;
+    max-width: 265px;
+    font-size: 13px;
+
+    @media all and(min-width: 768px) {
+      margin: 0px 218px;
+      max-width: 330px;
+      font-size: 16px;
+    }
+  }
+
+  &__options {
+    margin: 18px 26px 0px 26px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 268px;
+    height: 74px;
+    border: 2px solid rgba(225, 115, 52, 0.21);
+    border-radius: 4px;
+    padding: 15px;
+
+    @media all and(min-width: 768px) {
+      width: 325px;
+      height: 86px;
+      margin: 27px 220px 0px 220px;
+    }
+
+    .options__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .item__pic {
+        color: $color-icon;
+        font-size: 23px;
+
+        @media all and(min-width: 768px) {
+          font-size: 28px;
+        }
+      }
+
+      .item__title {
+        color: $color-text;
+        font-size: 13px;
+        text-align: left;
+      }
+    }
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    margin: 40px 100px 30px 90px;
+    background-color: $color-button;
+    border-radius: 21px;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+
+    @media all and(min-width: 768px) {
+      margin: 190px 320px 60px 320px;
+    }
+
+    .nav__startlink {
+      color: $color-grey3;
+    }
+  }
+}
